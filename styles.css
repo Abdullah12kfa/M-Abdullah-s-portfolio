@@ -1,0 +1,169 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    background: linear-gradient(to right, #000, #333);
+    color: #fff;
+    padding: 4rem 1rem; /* Increased top and bottom padding */
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow from child elements */
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem 0; /* Increased padding for the navigation */
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 1.8rem; /* Increased font size for the logo */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px; /* Increased spacing between menu items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    padding: 6rem 1rem 4rem; /* Increased padding for more depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow for better image fit */
+    height: calc(100vh - 80px); /* Adjusted height to account for the larger header */
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place behind the content */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    object-position: center; /* Center the image */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the image */
+    max-width: 700px; /* Increased max-width for larger text area */
+    text-align: center;
+    padding: 2rem; /* Added padding for increased depth */
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly opaque background for better readability */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+}
+
+.hero h1 {
+    font-size: 3.5rem; /* Increased font size for a bolder heading */
+    margin-bottom: 2rem; /* Added space below the heading */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Increased font size for better readability */
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ff3d34;
+}
+
+section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #111;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project {
+    background: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    flex: 1 1 calc(33.333% - 2rem);
+    margin: 1rem;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.project h3 {
+    color: #fff;
+}
+
+.project p {
+    color: #ccc;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
